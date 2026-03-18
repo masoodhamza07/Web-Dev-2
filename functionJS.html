@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function -- block of code , user  or defined to perform specific task
+        // Types of Function
+        // normal function :- with para , without para and with default
+
+        // normal function without parameters ....
+
+        function demo(){
+            console.log("hello JS");
+        }
+        demo (); //function calling
+
+
+        //with parameters ....
+        function demo1(text){
+            console.log("hello JS" + text);
+        }
+        demo1("react"); //function calling
+
+
+        //default Parameters ....
+
+        function add(a,b=10){
+            console.log("addition is " + (a+b));
+        }
+        add(123); //function calling
+
+
+        //synchronous functio -- 
+        function cal(){
+            function add(a,b){
+                console.log("addition  is " + (a+b))
+            }
+            function mul(x,y){
+                console.log("multiplication  is " + (x*y))
+            }
+            function sub(p,r){
+                console.log("subtraction  is " + (p-r))
+            }
+            mul(3,5)
+            add(3,5)
+            sub(3,5)
+        }
+        cal();
+
+
+
+        //anonymous  function -- 
+        let msg=function (){
+            console.log("hello ABES");
+            console.log(typeof(msg));
+        }
+        msg();
+
+        //short code for above function i.e. arrow Function
+        let msg1 =()=>console.log("hello ABESSS EC");
+        msg1();
+
+        //arrowFunction using multiple lines 
+
+        let msg2=(a,b)=>{
+            var num1=a;
+            var num2=b;
+            var res = num1/num2;
+            comsole.log("result is "+ res);
+        }
+        msg2(10,20);
+
+
+        //IIFE :- 
+        (function(){
+            console.log("hello world!");
+        })();
+
+        (msg=>console.log("he"))
+
+
+    </script>
+</body>
+</html>
